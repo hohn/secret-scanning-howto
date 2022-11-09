@@ -1,0 +1,18 @@
+* secret scanning howto
+  In the github documentation, there is a mention that
+  [[https://www.hyperscan.io][hyperscan]] is used to match the source text.
+
+  The reference page [[http://intel.github.io/hyperscan/dev-reference/compilation.html#pattern-support][here]] mentions differences to pcre2, but the original man page
+  is the reference.
+
+  There are three patterns on the
+  #+CAPTION: Security & analysis / Update pattern
+  [[./img/secret-scan-config.png]]
+
+  What is the order of evaluation for custom patterns; are they all put together
+  in one pattern or are they sequentially evaluated in code?
+
+  (before)expression(after) is evaluated first.
+  next, before/after are stripped leaving what matched the expression, then
+  must[not] matches are evaluated after. 
+  
