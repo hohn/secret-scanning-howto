@@ -7,7 +7,7 @@
 
   The supported regex constructs are documented [[https://intel.github.io/hyperscan/dev-reference/compilation.html#supported-constructs][here]].
 
-  There are three patterns on the
+  There are three patterns on the custom pattern page:
   #+CAPTION: Security & analysis / Update pattern
   [[./img/secret-scan-config.png]]
 
